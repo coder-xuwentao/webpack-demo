@@ -5,20 +5,22 @@
     "private": true,
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "start": "webpack serve --open --config webpack.dev.js",
-        "build": "webpack --config webpack.prod.js"
+        "build": "webpack",
+        "start": "http-server dist"
     },
-    "keywords": [],
-    "author": "",
+    "keywords": [
+        "demo"
+    ],
+    "author": "xuwentao",
     "license": "ISC",
     "devDependencies": {
         "html-webpack-plugin": "^5.3.2",
+        "http-server": "^13.0.2",
         "webpack": "^5.51.1",
         "webpack-cli": "^4.8.0",
-        "webpack-dev-server": "^4.2.1"
+        "workbox-webpack-plugin": "^6.3.0"
     },
     "dependencies": {
         "lodash": "^4.17.21"
-    },
-    "sideEffects": false
+    }
 }
